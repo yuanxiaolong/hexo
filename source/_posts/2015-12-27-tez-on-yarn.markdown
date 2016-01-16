@@ -199,13 +199,11 @@ done
 </property>
 ```
 
-> 注：跟官网给出的文档有3处不同
->
-> yarn.timeline-service.http-cross-origin.enabled 默认为false，我修改为true让其支持跨域访问
->
-> yarn.timeline-service.http-cross-origin.allowed-headers 里新增了Access-Control-Allow-Origin 这种 header
->
-> yarn.timeline-service.http-cross-origin.allowed-methods 里新增了 OPTIONS 方法
+注：跟官网给出的文档有3处不同
+
+* `yarn.timeline-service.http-cross-origin.enabled` 默认为false，我修改为true让其支持跨域访问
+* `yarn.timeline-service.http-cross-origin.allowed-headers` 里新增了Access-Control-Allow-Origin 这种 header
+* `yarn.timeline-service.http-cross-origin.allowed-methods` 里新增了 OPTIONS 方法
 
 以下内容我没有添加，没有试验，不过在 yarn-default.xml 里可以看到，即使没有显示写 ttl 配置，也有默认值
 
@@ -289,7 +287,7 @@ hadoop dfs -put LICENSE.txt /test/LICENSE.txt
 
 1.进入hive，然后执行 ` set hive.execution.engine=tez;` ，然后就可以正常使用
 
-2.编写hive-site.xml，修改下面属性，这样就全局影响了
+2.编写`hive-site.xml`，修改下面属性，这样就全局影响了
 
 ``` xml
 <property>
