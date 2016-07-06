@@ -76,7 +76,7 @@ deploy:
   message: ""
   repo:
     github: git@github.com:yuanxiaolong/yuanxiaolong.github.io.git,master
-    gitcafe: git@gitcafe.com:yuanxiaolong/yuanxiaolong.git,gitcafe-pages
+    #gitcafe: git@gitcafe.com:yuanxiaolong/yuanxiaolong.git,gitcafe-pages
 
 # RSS
 feed:
